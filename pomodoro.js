@@ -1,11 +1,13 @@
 let minutes = 10;
 
 document.addEventListener('DOMContentLoaded', function() {
+    let tomato = document.getElementById('tomato');
 
     document.querySelector('h1').innerHTML = minutes;
 
     document.querySelector('button').onclick = function() {
         document.querySelector('button').disabled = true;
+        tomato.style.animationPlayState = 'running';
 
         let countdown = setInterval(function() {
             if (minutes === 0) {

@@ -1,0 +1,17 @@
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#tomato {
+    animation-play-state: paused;
+    animation-name: fade;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    width: 474px; 
+    height: 379px
+}
